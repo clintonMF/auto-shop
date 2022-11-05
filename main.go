@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/clintonMF/auto-shop/product"
+	"github.com/clintonMF/auto-shop/shop"
 )
 
 func main() {
 	fmt.Println("i am here")
 
-	product.Hi()
-	product.Hello()
+	shop.Hi()
+	volvo := shop.AddCar()
 }
