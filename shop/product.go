@@ -13,6 +13,7 @@ func Display(p Product) {
 	quantity := p.Quantity()
 	price := p.Price()
 
-	fmt.Printf("Name - %s \nQuantity - %v \n Price - %.2f", name, quantity,
+	fmt.Printf("Name - %s \nQuantity - %v \nPrice - %.2f", name, quantity,
 		price)
+	Newline(2)
 }
