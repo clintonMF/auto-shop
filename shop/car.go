@@ -2,10 +2,6 @@ package shop
 
 import "fmt"
 
-// func HiF() {
-// 	fmt.Println("HI")
-// }
-
 type car struct {
 	id        string
 	brandName string
@@ -39,7 +35,10 @@ func (c *car) Price() float64 {
 	return c.price
 }
 
-func (c *car) AddQuantity(num int) {
-	c.quantity = c.quantity + num
-	fmt.Print(c.quantity)
+func (c *car) Sell(num int) {
+	c.quantity = c.quantity - num
+}
+
+func (c *car) IsFinished() bool {
+	return c.quantity > 1
 }

@@ -16,11 +16,5 @@ func Newline(num int) {
 func GenUUID() string {
 	id := guuid.New()
 	Id := fmt.Sprintf("%v", id)
-	return Id[:10]
-}
-
-func GenLongUUID() string {
-	id := guuid.New()
-	Id := fmt.Sprintf("%v", id)
-	return Id[:16]
+	return Id[:6]
 }

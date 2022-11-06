@@ -6,6 +6,8 @@ type Product interface {
 	Name() string
 	Quantity() int
 	Price() float64
+	Sell(qty int)
+	IsFinished() bool
 }
 
 func Display(p Product) {
