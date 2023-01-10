@@ -6,6 +6,7 @@ import (
 	guuid "github.com/google/uuid"
 )
 
+// This function helps in creating new lines
 func Newline(num int) {
 	for num > 0 {
 		fmt.Println()
@@ -13,6 +14,7 @@ func Newline(num int) {
 	}
 }
 
+// This function is used to generate a short ID
 func GenUUID() string {
 	id := guuid.New()
 	Id := fmt.Sprintf("%v", id)

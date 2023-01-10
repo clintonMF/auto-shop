@@ -24,10 +24,7 @@ func NewStore() *Store {
 
 // This function tells the number of unique product in store
 func (s Store) NumberOfProduct() {
-	num := 0
-	for i := 0; i < len(s.myStore); i++ {
-		num++
-	}
+	num := len(s.myStore)
 
 	fmt.Printf("You have %v types of products in this store", num)
 	Newline(2)
@@ -92,7 +89,7 @@ it also shows
 func (s Store) ItemsLog() {
 	Newline(1)
 	fmt.Println("SALES HISTORY")
-	fmt.Println("Num ====== Name ===== Price ==== Qty = Total price")
+	fmt.Println("Num ====== Name ============= Price ==== Qty ====== Total price")
 	var total_sales_made float64
 	var total_number_of_cars_sold int
 	for i, v := range logBook {
@@ -102,7 +99,7 @@ func (s Store) ItemsLog() {
 		qty := v.quantity
 		totalPrice := float64(qty) * price
 
-		fmt.Printf("%d - %v - %.2f, %v, %.2f", num, item.Name(), price, qty, totalPrice)
+		fmt.Printf("%d - %v -  %.2f,    %v,      %.2f", num, item.Name(), price, qty, totalPrice)
 		total_sales_made += totalPrice
 		total_number_of_cars_sold += qty
 		Newline(1)
