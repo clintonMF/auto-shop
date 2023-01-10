@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	fmt.Println("WELCOME TO CLINTON AUTO SHOP")
-	shop.Newline(2)
+	fmt.Println("WELCOME TO JOHN'S AUTO SHOP")
+	shop.Newline(1)
 	// creating store
 	store := shop.NewStore()
 

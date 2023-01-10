@@ -28,3 +28,20 @@ The Store class should have attributes like
 - Listing all product items in the store
 - Sell an item
 - Show a list of sold items and the total price
+
+## Project structure
+
+```
+project
+│   go.mod
+|   go.sum
+|   main.go
+│   README.md
+│
+└─── shop
+        accessory.go
+        car.go
+        product.go
+        store.go
+        util.go
+```
